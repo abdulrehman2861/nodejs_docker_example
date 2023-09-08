@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: abdulrehman2861/nodejs_docker_example/nodejs_docker_example:latest
+          tags: abdulrehman2861/nodejs_docker_example:latest
