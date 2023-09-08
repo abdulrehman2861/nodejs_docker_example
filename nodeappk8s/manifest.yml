@@ -18,7 +18,7 @@ metadata:
   labels:
     app: node-hello-world-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: node-hello-world-app
@@ -29,8 +29,7 @@ spec:
     spec:
       containers:
       - name: node-hello-world-app-container
-        image: 106769843717.dkr.ecr.us-east-1.amazonaws.com/nodejs_docker_example:nodejs_docker_example
-        imagePullPolicy: Always
+        image: abdulrehman2861/nodejs_docker_example:latest
         ports:
           - name: web
             containerPort: 3000
